@@ -2,7 +2,9 @@
     "name": "{{ project_name }}",
     "version": "{{ project_version }}",
     "description": "{{ project_description }}",
-    "private": {{ project_private | lower }},
+    "private":
+    {{ project_private | lower }},
+    "main": "./dist-electron/index.js",
     "scripts": {
         "build": "vite build",
         "dev": "vite --host",
@@ -31,9 +33,12 @@
     "devDependencies": {
         "@vitejs/plugin-vue": "^5.0.4",
         "@vue/test-utils": "^2.4.5",
+        "electron": "^30.0.1",
+        "electron-builder": "^24.13.3",
         "jsdom": "^24.0.0",
         "typescript": "^5.4.4",
         "vite": "^5.2.8",
+        "vite-plugin-electron": "^0.28.5",
         "vitest": "^1.5.0"
     }
 }

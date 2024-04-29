@@ -8,6 +8,11 @@ project_name:
     Project name cannot be empty.
     {% endif %}
 
+project_title:
+  type: str
+  help: "Title of application:"
+  default: "{{ project_name[0] | upper }}{{ project_name[1:] }}"
+
 project_description:
   type: str
   help: "Description of this project:"
