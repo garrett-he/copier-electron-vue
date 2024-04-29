@@ -15,6 +15,3 @@
 
 ---
   !include copier/questions/node.yml
-
----
-  !include copier/questions/docker.yml
